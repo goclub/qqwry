@@ -37,6 +37,9 @@ type Location struct {
 func LocationCache() *sync.Map {
 	return locationCache
 }
+func SetLocationCache(m *sync.Map) {
+	locationCache = m
+}
 
 func byte3ToUInt32(data []byte) uint32 {
 	i := uint32(data[0]) & 0xff
