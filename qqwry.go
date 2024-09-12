@@ -34,6 +34,10 @@ type Location struct {
 	IP       string // IP地址
 }
 
+func LocationCache() *sync.Map {
+	return locationCache
+}
+
 func byte3ToUInt32(data []byte) uint32 {
 	i := uint32(data[0]) & 0xff
 	i |= (uint32(data[1]) << 8) & 0xff00
