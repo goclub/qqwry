@@ -1,4 +1,4 @@
-module github.com/xiaoqidun/qqwry
+module github.com/goclub/qqwry
 
 go 1.20
 
